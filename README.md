@@ -97,7 +97,7 @@ Analisis data terhadap satu feature saja tanpa melihat hubungan dengan features 
 
 Output:
 <p align="center">
-    <img src="..\univariate\1.png", alt="Boxplot">
+    <img src="univariate/1.png", alt="Boxplot">
 </p>
 
 > for i in range(0, len(num)):<br>
@@ -107,7 +107,7 @@ Output:
 
 Output:
 <p align="center">
-    <img src="..\univariate\2.png", alt="Distribution Chart">
+    <img src="univariate/2.png", alt="Distribution Chart">
 </p>
 
 >for i in range(0, len(num)):<br>
@@ -117,7 +117,7 @@ Output:
 
 Output:
 <p align="center">
-    <img src="..\univariate\3.png", alt="[Violin Chart">
+    <img src="univariate/3.png", alt="[Violin Chart">
 </p>
 
 > for i in range(0, len(cats)):<br>
@@ -127,16 +127,16 @@ Output:
 
 Output:
 <p align="center">
-    <img src="..\univariate\4.png", alt="Bar Chart Categorical Data">
+    <img src="univariate/4.png", alt="Bar Chart Categorical Data">
 </p>
 
 
 **Kesimpulan**:
-* Outliers, pada kolom Annual_Premium terdapat outliers.
-* Distribusi data tidak normal, banyak kolom yang distribusinya belum seimbang sehingga perlu dilakukan feature transformation.
-* Class Imbalance, melakukan *oversampling/undersampling* untuk kolom Response dengan perbandingan minimal 1:3.
-* Feature Encoding, pada kolom Vehicle_Age dan Gender  dilakukan *label encoding*.
-* Mengubah tipe data, mengubah tipe data Vehicle_Damage menjadi numerik dengan astype()/pd.numeric(). 
+* ***Outliers***, pada kolom Annual_Premium terdapat outliers.
+* **Distribusi data tidak normal**, banyak kolom yang distribusinya belum seimbang sehingga perlu dilakukan feature transformation.
+* ***Class Imbalance***, melakukan *oversampling/undersampling* untuk kolom Response dengan perbandingan minimal 1:3.
+* ***Feature Encoding***, pada kolom Vehicle_Age dan Gender  dilakukan *label encoding*.
+* **Mengubah tipe data**, mengubah tipe data Vehicle_Damage menjadi numerik dengan astype()/pd.numeric(). 
 
 
 ## **Multivariate Analysis**
@@ -147,7 +147,7 @@ Analisis data terhadap suatu feature untuk melihat hubungan/korelasi dengan feat
 
 Output:
 <p align="center">
-    <img src="..\multivariate\5.png", alt="Heatmap Correlation">
+    <img src="multivariate/5.png", alt="Heatmap Correlation">
 </p>
 
 > plt.figure(figsize=(15, 15))<br>
@@ -156,17 +156,16 @@ Output:
 
 Output:
 <p align="center">
-    <img src="..\multivariate\9.png", alt="Pairplot">
+    <img src="multivariate/9.png", alt="Pairplot">
 </p>
 
 **Kesimpulan**:
 1. Features yang relevan untuk dipertahankan?
     * Target memiliki korelasi tinggi dengan Previously_Insured sebesar -0.34 yang berarti berkorelasi negatif.
     * Target memiliki korelasi tinggi dengan Vehicle_Damage sebesar 0.35 yang berarti berkorelasi positif..
-    * Dari heatmap dapat disimpulkan Age, Vehicle_Age, Previously_Insured, dan Vehicle Damage memiliki kausalitas yang cukup tinggi.
 2. Pola menarik?
     * Heatmap: <br>
-    Terdapat korelasi yang kuat antara Age dan Vehicle_Age sebesar 0.77 yang berarti korelasi highly positive dimana jika dibandingkan dengan target/Response kolom Vehicle_Age memiliki korelasi yang lebih tinggi sehingga dipertimbangkan mempertahankan Vehicle_Age dibandingkan Age.
+    Tidak ada kolom numerik yang berkorelasi kuat. 
         ###### Note: korelasi kuat adalah nilai ">0.7" (kemungkinan redundant)
 
     * Pairplot: <br>
@@ -177,11 +176,11 @@ Output:
 
 ## **Business Insight**
 <p align="center">
-    <img src="..\insight\1.png", alt="Insight1">
+    <img src="insight/1.png", alt="Insight1">
 </p>
 
 <p align="center">
-    <img src="..\insight\2.png", alt="Insight2">
+    <img src="insight/2.png", alt="Insight2">
 </p>
 
 * Pelanggan yang lebih muda cenderung lebih tertarik dengan asuransi kendaraan daripada pelanggan yang lebih tua. Kita juga dapat melihat bahwa sebagian besar pelanggan berusia antara 20 hingga 60 tahun.
@@ -190,15 +189,30 @@ Output:
 <br>
 <br>
 <p align="center">
-    <img src="..\insight\3.png", alt="Insight3">
+    <img src="insight/3.png", alt="Insight3">
 </p>
 
+* Berdasarkan data, total respon pelanggan dengan usia kendaraan 1-2 tahun lebih banyak, diikuti oleh pelanggan dengan usia kendaraan < 1 tahun dan > 2 tahun.
+
+* Namun, jika dibandingkan persentase jumlah seluruh pelanggan terhadap ketertarikan pada setiap grup usia kendaraan, persentase grup usia kendaraan >2 tahun paling banyak memberikan respon, sebesar 29,37%, diikuti oleh pelanggan dengan usia kendaraan 1-2 tahun  sebanyak 17,38% , dan pelanggan dengan usia kendaraan <1 tahun sebesar  4,37%.
+
+* Berdasarkan data tersebut, diketahui  bahwa usia kendaraan mempengaruhi ketertarikan pelanggan terhadap asuransi kendaraan.
+Business Recommendation : Untuk meningkatkan ketertarikan dari customer, perusahaan dapat melakukan kerjasama dengan perusahaan bengkel otomotif untuk memberikan discount service berkala / sparepart kepada customer yang memiliki asuransi kendaraan. Selain itu, saat campaign produk juga perlu diberikan rincian perbandingan biaya service berkala/risk yang lain antara yang memiliki asuransi dan tidak, sehingga pelanggan dengan usia kendaraan yang masih tergolong baru juga tertarik untuk membeli asuransi kendaraan
+<br>
+<br>
 <p align="center">
-    <img src="..\insight\4.png", alt="Insight4">
+    <img src="insight/4.png", alt="Insight4">
 </p>
 
+* Dari grafik diatas, pelanggan yang bergabung dengan rentang waktu 5-8 bulan memiliki ketertarikan terhadap produk ‘Asuransi Kendaraan’ yang cukup banyak sekitar 19281 pelanggan, kemudian rentang waktu 1-4 Bulan sekitar 18038 pelanggan yang tertarik asuransi kendaraan dan yang paling sedikit tertarik asuransi kendaraan adalah pelanggan yang sudah bergabung diatas 9 bulan.
+
+* Akan tetapi berdasarkan rasio persentase masing-masing vintage masih sangat kecil hanya 12% setiap group vintage.
+
+* Business Recommendation : Untuk membuat pelanggan tertarik, dapat memberikan bundling produk asuransi bersama dengan asuransi kendaraan dengan gimmick “Paket Hemat” serta gratis biaya service pertama sejak membeli asuransi.
+<br>
+<br>
 <p align="center">
-    <img src="..\insight\5.png", alt="Insight5">
+    <img src="insight/5.png", alt="Insight5">
 </p>
 
 * Berdasarkan data, pelanggan asuransi dengan gender laki-laki lebih banyak dibandingkan dengan pelanggan perempuan. 
@@ -211,11 +225,16 @@ Output:
 <br>
 <br>
 <p align="center">
-    <img src="..\insight\6.png", alt="Insight6">
+    <img src="insight/6.png", alt="Insight6">
 </p>
 
+* Berdasarkan grafik diatas pelanggan yang memiliki Driving License lebih cenderung tertarik dengan penawaran Asuransi Kendaraan.
+
+* Business Recommendation : Perusahaan dapat menargetkan pemasaran ‘Asuransi kendaraan’ kepada customers yang telah memiliki izin mengemudi. Untuk itu perusahaan dapat membuat campaign yang mungkin disertai dengan promo spesial penjualan perdana produk ‘Asuransi Kendaraan’ dengan syarat menyertakan SIM mereka, dengan begitu perusahaan akan dengan mudah mendapatkan target customers yang telah memiliki SIM.
+<br>
+<br>
 <p align="center">
-    <img src="..\insight\7.png", alt="Insight7">
+    <img src="insight/7.png", alt="Insight7">
 </p>
 
 * Dari data terdapat 192.413 pelanggan yang memiliki kendaraan yang buruk dan 188.696 yang memiliki kendaraan yang masih tergolong bagus.
@@ -226,7 +245,7 @@ Output:
 <br>
 <br>
 <p align="center">
-    <img src="..\insight\8.png", alt="Insight8">
+    <img src="insight/8.png", alt="Insight8">
 </p>
 
 * Dari 206.481 pelanggan yang belum memiliki ‘Asuransi Kendaraan’ terdapat 22.55% (46.552 orang) berminat terhadap ‘Asuransi Kendaraan’ yang ditawarkan oleh perusahaan dan 174.628 pelanggan yang sudah memiliki ‘Asuransi Kendaraan’ dimana walaupun sudah memiliki terdapat 0.09% (158 orang) juga berminat.
