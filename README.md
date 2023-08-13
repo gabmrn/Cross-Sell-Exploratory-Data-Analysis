@@ -29,7 +29,7 @@ Proses ini dapat membantu mendeteksi kesalahan dalam data, medeteksi data yang p
 2. `pip install requirement.txt`.
 
 
-## Getting Started
+## Table of Contents
 - Statistical Descriptive
 - Univariate Analysis
 - Multivariate Analysis
