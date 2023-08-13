@@ -97,7 +97,7 @@ Analisis data terhadap satu feature saja tanpa melihat hubungan dengan features 
 
 Output:
 <p align="center">
-    <img src="..\Stage_1\univariate\1.png", alt="Boxplot">
+    <img src="..\univariate\1.png", alt="Boxplot">
 </p>
 
 > for i in range(0, len(num)):<br>
@@ -107,7 +107,7 @@ Output:
 
 Output:
 <p align="center">
-    <img src="..\Stage_1\univariate\2.png", alt="Distribution Chart">
+    <img src="..\univariate\2.png", alt="Distribution Chart">
 </p>
 
 >for i in range(0, len(num)):<br>
@@ -117,7 +117,7 @@ Output:
 
 Output:
 <p align="center">
-    <img src="..\Stage_1\univariate\3.png", alt="[Violin Chart">
+    <img src="..\univariate\3.png", alt="[Violin Chart">
 </p>
 
 > for i in range(0, len(cats)):<br>
@@ -127,7 +127,7 @@ Output:
 
 Output:
 <p align="center">
-    <img src="..\Stage_1\univariate\4.png", alt="Bar Chart Categorical Data">
+    <img src="..\univariate\4.png", alt="Bar Chart Categorical Data">
 </p>
 
 
@@ -147,7 +147,7 @@ Analisis data terhadap suatu feature untuk melihat hubungan/korelasi dengan feat
 
 Output:
 <p align="center">
-    <img src="..\Stage_1\multivariate\5.png", alt="Heatmap Correlation">
+    <img src="..\multivariate\5.png", alt="Heatmap Correlation">
 </p>
 
 > plt.figure(figsize=(15, 15))<br>
@@ -156,7 +156,7 @@ Output:
 
 Output:
 <p align="center">
-    <img src="..\Stage_1\multivariate\9.png", alt="Pairplot">
+    <img src="..\multivariate\9.png", alt="Pairplot">
 </p>
 
 **Kesimpulan**:
@@ -177,11 +177,11 @@ Output:
 
 ## **Business Insight**
 <p align="center">
-    <img src="..\Stage_1\insight\1.png", alt="Insight1">
+    <img src="..\insight\1.png", alt="Insight1">
 </p>
 
 <p align="center">
-    <img src="..\Stage_1\insight\2.png", alt="Insight2">
+    <img src="..\insight\2.png", alt="Insight2">
 </p>
 
 * Pelanggan yang lebih muda cenderung lebih tertarik dengan asuransi kendaraan daripada pelanggan yang lebih tua. Kita juga dapat melihat bahwa sebagian besar pelanggan berusia antara 20 hingga 60 tahun.
@@ -190,15 +190,15 @@ Output:
 <br>
 <br>
 <p align="center">
-    <img src="..\Stage_1\insight\3.png", alt="Insight3">
+    <img src="..\insight\3.png", alt="Insight3">
 </p>
 
 <p align="center">
-    <img src="..\Stage_1\insight\4.png", alt="Insight4">
+    <img src="..\insight\4.png", alt="Insight4">
 </p>
 
 <p align="center">
-    <img src="..\Stage_1\insight\5.png", alt="Insight5">
+    <img src="..\insight\5.png", alt="Insight5">
 </p>
 
 * Berdasarkan data, pelanggan asuransi dengan gender laki-laki lebih banyak dibandingkan dengan pelanggan perempuan. 
@@ -211,11 +211,11 @@ Output:
 <br>
 <br>
 <p align="center">
-    <img src="..\Stage_1\insight\6.png", alt="Insight6">
+    <img src="..\insight\6.png", alt="Insight6">
 </p>
 
 <p align="center">
-    <img src="..\Stage_1\insight\7.png", alt="Insight7">
+    <img src="..\insight\7.png", alt="Insight7">
 </p>
 
 * Dari data terdapat 192.413 pelanggan yang memiliki kendaraan yang buruk dan 188.696 yang memiliki kendaraan yang masih tergolong bagus.
@@ -226,7 +226,7 @@ Output:
 <br>
 <br>
 <p align="center">
-    <img src="..\Stage_1\insight\8.png", alt="Insight8">
+    <img src="..\insight\8.png", alt="Insight8">
 </p>
 
 * Dari 206.481 pelanggan yang belum memiliki ‘Asuransi Kendaraan’ terdapat 22.55% (46.552 orang) berminat terhadap ‘Asuransi Kendaraan’ yang ditawarkan oleh perusahaan dan 174.628 pelanggan yang sudah memiliki ‘Asuransi Kendaraan’ dimana walaupun sudah memiliki terdapat 0.09% (158 orang) juga berminat.
